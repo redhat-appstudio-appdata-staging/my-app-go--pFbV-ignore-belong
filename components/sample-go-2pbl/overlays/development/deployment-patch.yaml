@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sample-go-2pbl
+  namespace: rhn-support-tgornals-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-tgornals-tenant/my-app-go/sample-go-2pbl@sha256:8dbcbafca636ce8b7ab7b8a702050b71069b238965eb2060685e2c3921439e8d
+        name: my-go
+        resources: {}
+status: {}
