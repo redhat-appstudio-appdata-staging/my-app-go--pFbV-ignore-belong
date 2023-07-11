@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: sample-go-2pbl
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
