@@ -9,10 +9,10 @@ metadata:
     app.kubernetes.io/name: sample-go-2pbl
     app.kubernetes.io/part-of: my-app-go
   name: sample-go-2pbl
-  namespace: rhn-support-tgornals-tenant
 spec:
   ports:
-  - port: 8081
+  - name: "8081"
+    port: 8081
     targetPort: 8081
   selector:
     app.kubernetes.io/instance: sample-go-2pbl
